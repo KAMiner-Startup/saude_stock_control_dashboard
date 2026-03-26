@@ -1,0 +1,26 @@
+/* Fundo com imagem de estoque de farmácia para a tela de login */
+.login-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background: url('/src/assets/photo-1576602976047-174e57a47881.avif') center center/cover no-repeat;
+  filter: blur(2px) brightness(0.92);
+  transition: filter 0.3s;
+}
+
+.login-bg-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background: rgba(0,0,0,0.5);
+  pointer-events: none;
+}
+
+.login-content {
+  position: relative;
+  z-index: 2;
+}
